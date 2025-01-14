@@ -56,4 +56,4 @@ async def setup_hook():
     await bot.tree.sync()
 
 # รันบอท
-bot.run("MTMyODE2MjU0Nzg5NDg0OTUzNw.GFSJqt.LXdtxDnUPfuqF1QG7gSdZwO_GH81pmd-c_FF-M")  # แทนที่ด้วย Token ของคุณ
+bot.run("MTMyODE2MjU0Nzg5NDg0OTUzNw.Go-_Zw.kReHO1mVK-CWmdjLNh7Kcd6GjwSS9rliuOZB1w")  # แทนที่ด้วย Token ของคุณ
