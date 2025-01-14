@@ -2,7 +2,11 @@ import discord
 from discord.ext import commands
 import asyncio
 
+# กำหนด Intents สำหรับการเข้าถึงข้อมูลต่างๆ
 intents = discord.Intents.default()
+intents.message_content = True  # เปิดใช้งานการรับข้อความ
+
+# สร้างบอทโดยใช้ command_prefix และ intents
 bot = commands.Bot(command_prefix="/", intents=intents)
 
 # เมื่อบอทออนไลน์
@@ -55,5 +59,4 @@ async def getscript(interaction: discord.Interaction):
 async def setup_hook():
     await bot.tree.sync()
 
-# รันบอท
 bot.run("MTMyODE2MjU0Nzg5NDg0OTUzNw.Go-_Zw.kReHO1mVK-CWmdjLNh7Kcd6GjwSS9rliuOZB1w")  # แทนที่ด้วย Token ของคุณ
